@@ -5,6 +5,28 @@ import os
 import shutil
 import zipfile
 
+# --- NUEVA CONFIGURACIÓN DE PÁGINA Y LOGO ---
+URL_LOGO = "https://mauiandsons.cl/media/logo/stores/1/logo.png"
+
+# 1. Configurar la pestaña del navegador (Opcional pero recomendado)
+st.set_page_config(
+    page_title="Organizador Imágenes - Maui", # Título de la pestaña
+    page_icon=URL_LOGO,                    # Ícono de la pestaña
+    layout="centered"                       # O "wide" para pantalla completa
+)
+
+# 2. Diseño de la esquina superior izquierda (Logo + Título)
+# Creamos dos columnas: la primera para el logo (estrecha), la segunda para el título (ancha).
+col_logo, col_titulo = st.columns([1, 4]) # Proporción 1 a 4
+
+with col_logo:
+    # Mostramos el logo. 'width=150' ajusta el tamaño.
+    st.image(URL_LOGO, width=150)
+
+with col_titulo:
+    # Mostramos el título justo al lado del logo
+    st.title("Descargador y Organizador de Imágenes")
+
 st.title("Descarga las imagenes de tus pedidos")
 st.write("Sube tu archivo Excel que descargaste desde NuOrder. Cuando este cargado el sistema agrupará las imágenes en carpetas y te entregará un archivo ZIP.")
 
