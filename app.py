@@ -5,8 +5,8 @@ import os
 import shutil
 import zipfile
 
-st.title("Descargador y Organizador de Imágenes")
-st.write("Sube tu archivo Excel. El sistema agrupará las imágenes en carpetas y te entregará un archivo ZIP.")
+st.title("Descarga las imagenes de tus pedidos")
+st.write("Sube tu archivo Excel que descargaste desde NuOrder. Cuando este cargado el sistema agrupará las imágenes en carpetas y te entregará un archivo ZIP.")
 
 # 1. Interfaz para subir el archivo
 archivo_subido = st.file_uploader("Sube tu plantilla Excel (.xlsx)", type=["xlsx"])
