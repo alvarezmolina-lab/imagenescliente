@@ -25,7 +25,7 @@ with col_logo:
 
 with col_titulo:
     # Mostramos el título justo al lado del logo
-    st.title("Descargador y Organizador de Imágenes")
+    st.title("Descarga de Imagenes Maui-RipCurl-Prosurf")
 
 st.title("Descarga las imagenes de tus pedidos")
 st.write("Sube tu archivo Excel que descargaste desde NuOrder. Cuando este cargado el sistema agrupará las imágenes en carpetas y te entregará un archivo ZIP.")
