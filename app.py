@@ -5,7 +5,7 @@ import os
 import shutil
 import zipfile
 
-# --- NUEVA CONFIGURACIÓN DE PÁGINA Y LOGO ---
+# --- PÁGINA Y LOGO ---
 URL_LOGO = "https://mauiandsons.cl/media/logo/stores/1/logo.png"
 
 # 1. Configurar la pestaña del navegador (Opcional pero recomendado)
